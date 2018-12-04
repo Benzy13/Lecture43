@@ -14,7 +14,7 @@ namespace Lecture43
             int number;
             int.TryParse(inputString, out number);
 
-            if (number > 1 && number < 10)
+            if (number > 1 && number < 10) 
             {
                 Console.WriteLine("Valid");
             }
@@ -91,14 +91,14 @@ namespace Lecture43
             }
             else
             {
-                var points = (velocity - speedLimit) / 5;
+                var points = (velocity - speedLimit)/5;
                 var fine = points * 100;
-                Console.WriteLine(string.Format("You have {0} Points. You have a fine of R{1}", points, fine));
-                if (points >= 12)
+                Console.WriteLine(string.Format("You have {0} Points. You have a fine of R{1}",points,fine));
+                if (points>=12)
                 {
                     Console.WriteLine("Your license is suspended!");
                 }
-
+            
             }
         }
         /// Write a program and ask the user to enter a number. The number should be between 1 to 10. If the user enters 
@@ -182,5 +182,5 @@ namespace Lecture43
             }
         }
     }
-
+   
 }
